@@ -1,0 +1,210 @@
+  /* Google font cdn */
+  
+  @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lobster&family=Lora&family=Nunito&family=Open+Sans:wght@500&family=Poppins:wght@400;500;600;800&family=Roboto:wght@400;500;700&display=swap');
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+      /* background-color: grey; */
+      animation: transitionIn 0.75s;
+  }
+  /*Loading animation  */
+  
+  @keyframes transitionIn {
+      from {
+          opacity: 0;
+          transform: rotateX(-20deg);
+      }
+      to {
+          opacity: 1;
+          transform: rotateX(0);
+      }
+  }
+  /* main page start */
+  
+  .main_page {
+      width: 81rem;
+      height: 100vh;
+      background-color: white;
+      margin: 0 auto;
+      padding: 1rem;
+  }
+  /* ****************** Header Starts ************************** */
+  
+  .header {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .logo img {
+      width: 4rem;
+      height: 4rem;
+  }
+  
+  .navbar ul {
+      display: flex;
+  }
+  
+  .navbar ul li {
+      margin-left: 3rem;
+  }
+  
+  .navbar ul li a {
+      padding: 0.5rem;
+      font-weight: bold;
+      color: black;
+  }
+  
+  .navbar ul li a:hover {
+      transition: all 0.3s ease;
+      color: blue;
+  }
+  
+  .shop_cart {
+      padding: 0.3rem;
+      border-radius: 8px;
+  }
+  
+  .shop_cart img {
+      width: 2rem;
+      height: 2rem;
+  }
+  
+  .shop_cart img:hover {
+      transform: scale(1.2);
+  }
+  /* ****************************** Header End ************************* */
+  /* product content  ****************** starts ***************** */
+  
+  .product {
+      width: 100%;
+      height: calc(100% - 3rem);
+      display: grid;
+      grid-template-columns: 45% 55%;
+      align-items: center;
+      gap: 1rem;
+  }
+  
+  .content_part {
+      padding-left: 2rem;
+  }
+  
+  .content_part h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+  }
+  
+  .content_part h3 {
+      color: rgb(35, 162, 212);
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-family: 'Lobster', cursive;
+  }
+  
+  .content_part h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 1rem 0;
+  }
+  
+  .buttons {
+      display: flex;
+      gap: 1rem;
+  }
+  
+  .buttons .button {
+      width: 8rem;
+      height: 2.5rem;
+      background-color: red;
+      text-align: center;
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  .buttons .button:hover {
+      cursor: pointer;
+  }
+  
+  .btnHover:hover {
+      transition: all 0.3s ease;
+      transform: translateY(2px)
+  }
+  
+  .cart_number div {
+      flex: 1;
+  }
+  
+  .buttons .button:nth-child(1) {
+      background-color: white;
+      color: black;
+      box-shadow: 1px 1px 2px 1px grey;
+  }
+  /* images part starts */
+  
+  .images_part {
+      width: 80%;
+      height: 100%;
+      position: relative;
+  }
+  
+  .images_part .first_image {
+      width: 27rem;
+      height: 30rem;
+      transform: rotate(15deg);
+      position: absolute;
+      top: 1.5rem;
+  }
+  
+  .images_part .chatni {
+      width: 13rem;
+      height: 10rem;
+      position: absolute;
+      left: 0;
+      bottom: 100px;
+  }
+  
+  .chips {
+      width: 40rem;
+      height: 25rem;
+  }
+  
+  .images_part .box {
+      width: 100%;
+      height: 110px;
+      /* background-color: blue; */
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding: 0.5rem;
+  }
+  /* card images */
+  
+  .items img {
+      width: 4rem;
+      height: 6rem;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.3s ease;
+  }
+  
+  .items img:hover {
+      transform: rotate(5deg);
+  }
